@@ -1,0 +1,8 @@
+<div class="card mb-2">
+    <img src="{{ blog.image.url }}" class="card-img-top" alt="...">
+    <div class="card-body">
+    <h5 class="card-title">{{ blog.blog_name }}</h5>
+    <p class="card-text">{{ blog.desc|slice:"0:50"|safe }}</p>
+    <a href="{% url 'detail' blog.slug %}" class="btn btn-primary">Daha Fazla</a>
+    </div>
+</div>
